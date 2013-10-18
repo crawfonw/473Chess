@@ -1,0 +1,109 @@
+Computation Examples on 6x6
+
+Board #1
+
+0 * B * D E *
+1 * * * * * *
+2 * * * L * *
+3 * * * * * *
+4 G * I * * *
+5 A H C J K * F
+  0 1 2 3 4 5
+
+This board can be reset in 27 moves with the following sequence:
+Move G to (4, 1) (1 Move)
+Move I to (4, 3) (1 Move)
+Move C to (0, 2) (5 Moves)
+Move A to (0, 0) (5 Moves)
+Move I to (5, 2) (2 Moves)
+Move G to (5, 0) (2 Moves)
+Move F to (0, 5) (6 Moves)
+Move L to (5, 5) (5 Moves)
+
+
+Board #2
+
+0 A * * * E *
+1 * * * I * *
+2 * * D K * *
+3 F * * * * * J C
+4 H * * * * *
+5 G B * * L *
+  0 1 2 3 4 5
+  
+This board can be reset in 41 moves with the following sequence:
+Move L to (5, 5) (1 Move)
+Move I to (5, 2) (5 Moves)
+Move J to (5, 3) (5 Moves)
+Move B to (0, 1) (5 Moves)
+Move D to (0, 3) (3 Moves)
+Move H to (5, 1) (2 Moves)
+Move K to (5, 4) (4 Moves)
+Move F to (0, 5) (8 Moves)
+Move C to (0, 2) (8 Moves)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Computational Example on Blocked 4x4 Board
+
+0 A B * D
+1 * * * *
+2 * E G *
+3 F * C H
+  0 1 2 3
+
+('G', ('C', 'E', 'F')) inf
+('E', ('C', 'F', 'G')) inf
+('F', ('C', 'E', 'G')) inf
+('C', ('E', 'F', 'G')) 8
+('F', ('C', 'G')) inf
+('G', ('C', 'E')) inf
+('G', ('C', 'F')) inf
+('F', ('E', 'G')) 3
+('G', ('E', 'F')) 3
+('E', ('F', 'G')) inf
+('F', ('C', 'E')) inf
+('C', ('F', 'G')) inf
+('E', ('C', 'G')) inf
+('C', ('E', 'F')) inf
+('C', ('E', 'G')) inf
+('E', ('C', 'F')) inf
+('C', ('G',)) inf
+('E', ('F',)) inf
+('C', ('E',)) inf
+('G', ('C',)) inf
+('F', ('G',)) inf
+('E', ('G',)) 2
+('C', ('F',)) inf
+('E', ('C',)) inf
+('F', ('E',)) 2
+('G', ('E',)) 2
+('G', ('F',)) inf
+('F', ('C',)) inf
+('C', ()) inf
+('E', ()) 1
+('F', ()) inf
+('G', ()) 1
+
+[('C', (0, 2)), ('F', (3, 1)), ('E', (3, 0)), ('G', (3, 2))]
+
+This board can be reset in 9 moves with the following sequence:
+Move E to (2, 0) (1 Move)
+Move C to (0, 2) (5 Moves)
+Move F to (3, 1) (1 Move)
+Move E to (3, 0) (1 Move)
+Move G to (3, 2) (1 Move)
